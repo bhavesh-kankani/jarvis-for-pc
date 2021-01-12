@@ -62,14 +62,6 @@ def takeCommand():
         return "None"
     return query
 
-def sendEmail(to, content):
-    server = smtplib.SMTP('smtp.gmail.com: 587')
-    server.ehlo()
-    server.starttls()
-    server.login('bhaveshkankani769@gmail.com', 'b.kankani..')
-    server.sendmail('bhaveshkankani769@gmail.com', to , content)
-    server.close()
-
 if __name__ == '__main__':
     wishme()
     while True:
@@ -87,17 +79,6 @@ if __name__ == '__main__':
             speak("search complete")
             print(result)
             speak(result)
-        elif 'email' in query:
-            try:
-                speak("What should I send?")
-                content = takeCommand()
-                recipient_mail = "komal.k.kankani@gmail.com"
-                speak("trying to send the email")
-                sendEmail(recipient_mail, content)
-                speak("Email sent successfully.")
-            except Exception as e:
-                print(e)
-                speak("Some error has occured.. Unable to send the email")
         elif 'go offline' in query:
             speak("going offline")
             quit()
