@@ -3,10 +3,11 @@
 Jarvis-for-pc is simply a python script which does things based on what you speak.
 This is not an advanced jarvis which can understand your speech, so it will only work only if the correct keywords are used.
 The following are the commands:
-1) What is the time?
-2) What is the date?
-3) What day is today?
+1) What is the "time"?
+2) What is the "date"?
+3) What day is "today"?
 4) Jarvis "wikipedia". (This phrase will search for jarvis and fetch the wikipedia information on jarvis).
+5) Go "offline".
 
 More commands can be added such as sending a mail by using a command which I might update in future.
 
